@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script defer src="index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/luxon@2.0.2/build/global/luxon.min.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="index.css" />
+    <title>Awesome Books</title>
+  </head>
+  
+  <body>
+      <main>
+          
+      <nav class="navContainer">
+          <h1 class="title1">Awesome Books Collection</h1>        
+          <div class="nav d-none"></div>
+          <div class="close d-none"></div>
+          <ul class="navUl">
+              <li id="bookList" class="navLi pointer">List of Books</li>
+              <li id="addNew" class="navLi pointer">Add New</li>
+              <li id="contactInfo" class="navLi pointer">Contact</li>
+          </ul>
+      </nav>
+      
+      <div class="time-div">
+          <p class="time"></p>
+      </div>
+  
+      <div class="container d-flex">
+          <section id="div-container">
+              <ul class="contactInfoDiv d-none">
+                  <li>Contact information</li>
+                  <li><span>Do you have any questions or you want to reach out to say 'Hello'?</span> <br>You can reach out to us!</li>
+                  <li><span>Our e-mail: </span>gegardus@gmail.com</li>
+                  <li><span>Our phone number: </span>223322</li>
+                  <li><span>Our address: </span>Microverse, Solar System, Milky Way</li>
+              </ul>
+              
+              <div id="bookItem" class="d-flex d-none"></div>
+  
+          </section>
+          
+      </div>
+      
+      <form id="form" class="d-flex">
+          <h2>Add a new book</h2>
+          <label for="title">
+              <input class="input-title" id="title" type="text" placeholder="Title" required>
+          </label>
+          <label for="author">
+              <input class="input-author" id="author" type="text" placeholder="Author" required>
+          </label>
+          <button type="submit" class="add-btn">Add</button>
+      </form>
+  
+  </main>
+  
+      <footer>
+          <p>&copy; Copyright 2022 Gegardus</p>
+      </footer>  
+     
+  </body>  
+  </html>

@@ -1,0 +1,284 @@
+@import url("https://fonts.googleapis.com/css2?family=Luxurious+Roman&display=swap");
+
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+body {
+  background-color: #504e4e;
+  font-family: "Luxurious Roman", sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+span {
+  color: steelblue;
+}
+
+main {
+  min-height: 100%;
+  padding-bottom: 100px;
+  overflow: auto;
+}
+
+.title1 {
+  font-size: 35px;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+h1,
+h2 {
+  margin: 40px 0;
+  text-align: center;
+  z-index: 10;
+  color: #e0ffff;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+h3 {
+  font-size: 35px;
+  margin-bottom: 40px;
+  color: #e0ffff;
+}
+
+h4 {
+  color: #000;
+}
+
+footer p {
+  width: 80%;
+  margin: 0 auto;
+  padding: 2% 0;
+}
+
+.contactInfoDiv p {
+  font-size: 30px;
+  font-weight: 800;
+  margin-bottom: 30px;
+  color: #e0ffff;
+}
+
+.time-div {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.time-div p {
+  color: cyan;
+  font-weight: 500;
+  text-align: end;
+  margin: 40px 100px 0 0;
+}
+
+.container {
+  position: relative;
+  flex-wrap: wrap;
+  gap: 6px;
+  color: #fff;
+}
+
+#div-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  margin: 0 auto;
+}
+
+#bookItem {
+  position: relative;
+  width: 50%;
+  justify-content: space-between;
+  margin-top: 50px;
+  margin-bottom: 20px;
+  padding: 5px;
+  align-items: center;
+}
+
+.book {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 8px;
+  background-color: #5f9ea0;
+}
+
+.book:nth-child(even) {
+  background-color: #e0ffee;
+}
+
+.remove {
+  background-color: #5c2099;
+  color: white;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 3px;
+  box-shadow: 3px 3px #504e4e;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.5s ease;
+}
+
+.remove:hover {
+  color: #5c2099;
+  background-color: #fff;
+}
+
+#form {
+  gap: 10px;
+  width: 30%;
+  margin: 20px auto;
+}
+
+#form label {
+  width: 100%;
+}
+
+#form input {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 3px;
+  width: 100%;
+}
+
+#form button {
+  align-self: flex-end;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 3px;
+  box-shadow: 3px 3px #504e4e;
+  background-color: #2e8b57;
+  color: #fff;
+  cursor: pointer;
+  font-weight: 600;
+  margin-bottom: 40px;
+  transition: all 0.5s ease;
+}
+
+#form button:hover {
+  color: #2e8b57;
+  background-color: #fff;
+}
+
+.d-flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.d-none {
+  display: none;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  background-color: rgb(194, 194, 194);
+  width: 100%;
+}
+
+/* Navbar */
+
+.navContainer {
+  display: flex;
+  flex-direction: row;
+  background-color: rgb(194, 194, 194);
+  max-height: 100px;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.navUl {
+  display: flex;
+  justify-content: space-between;
+  padding: 2%;
+  color: black;
+  width: 40%;
+  align-items: center;
+}
+
+.navLi {
+  font-weight: bold;
+  border: 0.8px solid rgb(170, 169, 169);
+  padding: 8px;
+}
+
+.navLi:hover {
+  background-color: #ee82ee;
+}
+
+.nav {
+  display: none;
+}
+
+.navActive {
+  background-color: rgb(170, 169, 169);
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.closeActive {
+  display: block;
+  position: absolute;
+  right: 30px;
+  top: 30px;
+  height: 40px;
+  width: 40px;
+}
+
+.navUlActive {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10%;
+  width: 100%;
+}
+
+.navLiActive {
+  font-size: 30px;
+}
+
+.contactInfoActive {
+  display: flex;
+  flex-direction: column;
+}
+
+.contactInfoDiv {
+  margin-top: 80px;
+}
+
+.contactInfoDiv li {
+  font-size: 20px;
+  font-weight: 600;
+  margin-top: 15px;
+}
+
+.contactInfoDiv li:first-child {
+  font-size: 35px;
+  margin-bottom: 40px;
+  color: #e0ffff;
+}
+
+.pointer {
+  cursor: pointer;
+}
