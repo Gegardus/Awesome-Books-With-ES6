@@ -1,5 +1,6 @@
-// Navigation
-  
+
+export default () => {
+
 const form = document.querySelector('#form');
 const nav = document.querySelector('.nav');
 const close = document.querySelector('.close');
@@ -9,8 +10,6 @@ const navContainer = document.querySelector('.navContainer');
 const title1 = document.querySelector('.title1');
 const navLi = document.querySelectorAll('.navLi');
 const contactInfoDiv = document.querySelector('.contactInfoDiv');
-const time = document.querySelector('.time');
-const { DateTime } = this.luxon;
 
 const navOpen = () => {
   container.classList.add('d-none');
@@ -95,3 +94,4 @@ const contactInfoOpen = () => {
 bookList.addEventListener('click', bookListOpen);
 addNew.addEventListener('click', addNewOpen);
 contactInfo.addEventListener('click', contactInfoOpen);
+}
