@@ -4,11 +4,11 @@ import loadNavigation from './modules/navigation.js';
 import Time from './modules/date.js';
 
 let savedData = localStorage.getItem('books');
-  if (savedData === null) {
-    savedData = [];
-  } else {
-    savedData = JSON.parse(savedData);
-  }
+if (savedData === null) {
+  savedData = [];
+} else {
+  savedData = JSON.parse(savedData);
+}
 
 const books = new Books(savedData);
 
@@ -25,10 +25,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-
 loadNavigation();
 
 const showtime = new Time();
 showtime.show();
-
-
