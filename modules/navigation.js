@@ -20,9 +20,9 @@ export default () => {
     navUl.style.display = 'flex';
     navUl.classList.add('navUlActive');
     navLi.forEach((i) => {
-    i.classList.add('navLiActive');
-  });
-};
+      i.classList.add('navLiActive');
+    });
+  };
 
   const navClose = () => {
     container.classList.remove('d-none');
@@ -35,18 +35,18 @@ export default () => {
     navUl.classList.remove('navUlActive');
     nav.style.display = 'block';
     contactInfoDiv.style.display = 'none';
-};
+  };
 
-const navClose2 = () => {
-  container.classList.remove('d-none');
-  form.classList.remove('d-none');
-  title1.classList.remove('d-none');
-  navContainer.classList.remove('navActive');
-  navContainer.classList.add('navContainer');
-  nav.style.display = 'none';
-  close.classList.remove('closeActive');
-  navUl.classList.remove('navUlActive');
-  contactInfoDiv.style.display = 'none';
+  const navClose2 = () => {
+    container.classList.remove('d-none');
+    form.classList.remove('d-none');
+    title1.classList.remove('d-none');
+    navContainer.classList.remove('navActive');
+    navContainer.classList.add('navContainer');
+    nav.style.display = 'none';
+    close.classList.remove('closeActive');
+    navUl.classList.remove('navUlActive');
+    contactInfoDiv.style.display = 'none';
 };
 
   nav.addEventListener('click', navOpen);
@@ -65,7 +65,7 @@ const navClose2 = () => {
     contactInfo.style.backgroundColor = 'unset';
     bookList.style.backgroundColor = 'unset';
     addNew.style.backgroundColor = '#ee82ee';
-};
+  };
 
   const bookListOpen = () => {
     navClose2();
@@ -75,7 +75,7 @@ const navClose2 = () => {
     contactInfo.style.backgroundColor = 'unset';
     addNew.style.backgroundColor = 'unset';
     bookList.style.backgroundColor = '#ee82ee';
-};
+  };
 
   const contactInfoOpen = () => {
     navClose2();
@@ -87,9 +87,9 @@ const navClose2 = () => {
     addNew.style.backgroundColor = 'unset';
     bookList.style.backgroundColor = 'unset';
     contactInfo.style.backgroundColor = '#ee82ee';
-};
+  };
 
   bookList.addEventListener('click', bookListOpen);
   addNew.addEventListener('click', addNewOpen);
   contactInfo.addEventListener('click', contactInfoOpen);
-}
+};

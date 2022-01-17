@@ -16,14 +16,14 @@ books.displayBooks();
 
 document.addEventListener('DOMContentLoaded', () => {
   const form = document.querySelector('#form');
-    form.addEventListener('submit', (e) => {
-      e.preventDefault();
-      const title = document.querySelector('#title').value;
-      const author = document.querySelector('#author').value;
-      books.add(title, author);
-      form.reset();
-    });
+  form.addEventListener('submit', (e) => {
+    e.preventDefault();
+    const title = document.querySelector('#title').value;
+    const author = document.querySelector('#author').value;
+    books.add(title, author);
+    form.reset();
   });
+});
 
 loadNavigation();
 
