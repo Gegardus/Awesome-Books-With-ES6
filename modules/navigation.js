@@ -47,7 +47,7 @@ export default () => {
     close.classList.remove('closeActive');
     navUl.classList.remove('navUlActive');
     contactInfoDiv.style.display = 'none';
-};
+  };
 
   nav.addEventListener('click', navOpen);
   close.addEventListener('click', navClose);

@@ -15,11 +15,11 @@ export default class Books {
         `;
     });
 
-  const removeBooks2 = document.querySelectorAll('.remove');
-      removeBooks2.forEach((element, index) => {
+    const removeBooks2 = document.querySelectorAll('.remove');
+    removeBooks2.forEach((element, index) => {
       element.addEventListener('click', () => {
         this.remove(index);
-        });
+      });
     });
   }
 
@@ -40,8 +40,8 @@ export default class Books {
     this.displayBooks();
     this.saveBooksToStorage();
   }
-  
+
   saveBooksToStorage() {
     localStorage.setItem('books', JSON.stringify(this.savedData));
-    }
   }
+}
