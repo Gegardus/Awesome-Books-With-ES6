@@ -94,4 +94,5 @@ const contactInfoOpen = () => {
 bookList.addEventListener('click', bookListOpen);
 addNew.addEventListener('click', addNewOpen);
 contactInfo.addEventListener('click', contactInfoOpen);
+
 }

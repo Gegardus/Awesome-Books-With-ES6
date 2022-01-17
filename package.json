@@ -1,5 +1,5 @@
 {
-  "name": "Awesome-Books-With-ES6",
+  "name": "awesome-books-with-es6",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -18,6 +18,8 @@
   },
   "homepage": "https://github.com/Gegardus/Awesome-Books-With-ES6#readme",
   "dependencies": {
-    "luxon": "^2.3.0"
-  }
+    "luxon": "^2.3.0",
+    "three": "^0.136.0"
+  },
+  "devDependencies": {}
 }
