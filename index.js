@@ -1,4 +1,3 @@
-// import * as THREE from 'three';
 import Books from './modules/classes.js';
 import loadNavigation from './modules/navigation.js';
 import Time from './modules/date.js';
