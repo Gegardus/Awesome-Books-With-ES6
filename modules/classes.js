@@ -6,7 +6,7 @@ export default class Books {
   displayBooks() {
     const booksSection = document.querySelector('#bookItem');
     booksSection.innerHTML = '<h3>All awesome books</h3>';
-    this.savedData.forEach((book, index) => {
+    this.savedData.forEach((book) => {
       booksSection.innerHTML += `
         <div class="book">
           <h4 class="title">"${book.title}" by ${book.author}</h4>
