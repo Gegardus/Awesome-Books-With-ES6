@@ -10,9 +10,17 @@ export default class Books {
       booksSection.innerHTML += `
         <div class="book">
           <h4 class="title">"${book.title}" by ${book.author}</h4>
-          <button class="remove" onclick="removeBook(${index})">Remove</button>
+          <button class="remove" >Remove</button>
           </div>
         `;
+      });
+
+      const removeBooks2 = document.querySelectorAll('.remove');
+      removeBooks2.forEach((element, index) => {
+        element.addEventListener('click', () =>{
+         
+          this.remove(index);
+        })
       });
     }
   

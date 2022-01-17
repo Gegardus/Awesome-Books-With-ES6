@@ -1,4 +1,4 @@
-import * as THREE from 'three';
+// import * as THREE from 'three';
 import Books from './modules/classes.js';
 import loadNavigation from './modules/navigation.js';
 import Time from './modules/date.js';
@@ -11,9 +11,8 @@ let savedData = localStorage.getItem('books');
   }
 
 const books = new Books(savedData);
+
 books.displayBooks();
-const removeBook = (bookId) => books.remove(bookId);
-removeBook();
 
 document.addEventListener('DOMContentLoaded', () => {
   const form = document.querySelector('#form');
