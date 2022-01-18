@@ -1,4 +1,4 @@
-// import { DateTime } from '../node_modules/luxon/build/es6/luxon.js';
+/* eslint-disable no-undef */
 
 export default class Time {
   show = () => {
